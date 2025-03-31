@@ -6,16 +6,16 @@ A module for the MagicMirror framework that retrieves a school meal menu from th
 
 ![Screenshot](./docs/screenshot.png)
 
-## Install
+## Installation
 
-```
+```bash
 cd ~/MagicMirror/modules
 git clone https://github.com/evanhsu/MMM-TitanSchoolMealMenu.git
 ```
 
-## Update
+## Updating
 
-```
+```bash
 cd ~/MagicMirror/modules/MMM-TitanSchoolMealMenu
 git pull
 ```
@@ -24,6 +24,7 @@ git pull
 
 Add this to your MagicMirror `config.js`:
 
+```js
     {
         module: "MMM-TitanSchoolMealMenu",
         position: "top_left",
@@ -33,7 +34,8 @@ Add this to your MagicMirror `config.js`:
             buildingId: '23125610-cbbc-eb11-a2cb-82fe13669c55',
             districtId: '93f76ff0-2eb7-eb11-a2c4-e816644282bd',
             updateIntervalMs: 3600000, // Optional: Milliseconds between updates; Default: 3600000 (1 hour)
-            numberOfDaysToDisplay: 3, // Optional: 0 - 5; Default: 3
+            numberOfDaysToDisplay: 3, // Optional: 0 - 7; Default: 3
+            showWeekends: true, // Optional: boolean whether to show days labeled "Saturday" or "Sunday"; Default true
             recipeCategoriesToInclude: [
                 "Entrees",
                 "Grain"
@@ -46,9 +48,11 @@ Add this to your MagicMirror `config.js`:
             debug: false // Optional: boolean; Default: false; Setting this to true will output verbose logs
         },
     },
+```
 
 You can also track multiple school menus by listing the module multiple times in your `config.js` file (each config will probably have a different `buildingId`/`districtId`):
 
+```js
     {
         module: "MMM-TitanSchoolMealMenu",
         position: "top_right",
@@ -67,6 +71,7 @@ You can also track multiple school menus by listing the module multiple times in
             districtId: "93f76ff0-2eb7-eb11-a2c4-e816644282bd",
         }
     },
+```
 
 ![Multiple Schools](./docs/multiple-schools.png)
 

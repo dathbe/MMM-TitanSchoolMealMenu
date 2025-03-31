@@ -288,11 +288,11 @@ class TitanSchoolsClient {
       };
     });
 
-    console.log(
-      `School meal info from titanschools API: ${JSON.stringify(
-        upcomingMenuByDate
-      )}`
-    );
+    //console.log(
+    //  `School meal info from titanschools API: ${JSON.stringify(
+    //    upcomingMenuByDate
+    //  )}`
+    //);
 
     return upcomingMenuByDate;
   }
@@ -310,7 +310,7 @@ class TitanSchoolsClient {
  *   { date: '9-12-2021', label: 'Sunday' }
  * ]
  */
-const upcomingRelativeDates = (numberOfDays = 5) => {
+const upcomingRelativeDates = (numberOfDays = 7) => {
   const dayOfWeek = [
     "Sunday",
     "Monday",
