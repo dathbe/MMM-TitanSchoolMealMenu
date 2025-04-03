@@ -56,7 +56,7 @@ module.exports = NodeHelper.create({
     //);
 
     if (notificationName === "TITANSCHOOLS_SET_CONFIG") {
-      console.log(payload);
+      //console.log(payload);
       self.titanSchoolsClients[payload.instanceName] = new TitanSchoolsClient({
         buildingId: payload.buildingId,
         districtId: payload.districtId,
