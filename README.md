@@ -13,6 +13,7 @@ Clone `MMM-TitanSchoolMealMenu` into the modules folder of your MagicMirror² in
 ```bash
 cd ~/MagicMirror/modules
 git clone https://github.com/evanhsu/MMM-TitanSchoolMealMenu
+cd MMM-TitanSchoolMealMenu
 npm install
 ```
 
