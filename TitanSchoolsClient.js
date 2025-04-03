@@ -295,7 +295,7 @@ class TitanSchoolsClient {
     //  `School meal info from titanschools API: ${JSON.stringify(
     //    upcomingMenuByDate
     //  )}`
-    );
+    //);
 
     return upcomingMenuByDate;
   }
