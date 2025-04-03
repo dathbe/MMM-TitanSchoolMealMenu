@@ -104,7 +104,7 @@ Module.register("MMM-TitanSchoolMealMenu", {
 
     // Data from helper
     if (this.dataNotification && !this.dataError) {
-      console.log(this.dataNotification);
+      //console.log(this.dataNotification);
       const wrapperDataNotification = document.createElement("div");
 
       const meals = document.createElement("ul");
@@ -135,7 +135,7 @@ Module.register("MMM-TitanSchoolMealMenu", {
           breakfastMenuRecipes.innerHTML = dayMenu.breakfast ?? "none";
           breakfastMenuRecipes.className = "meal-recipes";
 
-          breakfastMenuList.className = "meal-description";
+          breakfastMenuList.className = "meal-description breakfast-description";
           breakfastMenuList.appendChild(breakfastMenuItems);
           breakfastMenuItems.appendChild(breakfastMenuTitle);
           breakfastMenuItems.appendChild(breakfastMenuRecipes);
@@ -154,7 +154,7 @@ Module.register("MMM-TitanSchoolMealMenu", {
           lunchMenuRecipes.innerHTML = dayMenu.lunch ?? "none";
           lunchMenuRecipes.className = "meal-recipes";
 
-          lunchMenuList.className = "meal-description";
+          lunchMenuList.className = "meal-description lunch-description";
           lunchMenuList.appendChild(lunchMenuItems);
           lunchMenuItems.appendChild(lunchMenuTitle);
           lunchMenuItems.appendChild(lunchMenuRecipes);
@@ -186,9 +186,9 @@ Module.register("MMM-TitanSchoolMealMenu", {
 
   // socketNotificationReceived from helper
   socketNotificationReceived: function (notificationName, payload) {
-    console.log(
-      `TitanSchools module (${this.instanceName}) received notification: ${notificationName}`
-    );
+    //console.log(
+    //  `TitanSchools module (${this.instanceName}) received notification: ${notificationName}`
+    //);
 
     if (
       notificationName ===
