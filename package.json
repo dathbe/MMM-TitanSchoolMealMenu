@@ -21,7 +21,7 @@
   "author": "evanhsu@gmail.com",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.21.3"
+    "axios": "^1.8.4"
   },
   "devDependencies": {
     "jest": "^29.3.1"
